@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Projet IFT4055 - Détails du projet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFT4055 - Projet</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <!-- Font Awesome (pour les éventuelles icônes) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  
+  <!-- Custom CSS -->
+  <style>
+    /* Scroll fluide et scroll-snap */
+    html {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding-top: 60px; /* Espace pour la navbar fixe */
+    }
+    /* Chaque section occupe toute la hauteur de la fenêtre et s'aligne au début */
+    section {
+      min-height: 100vh;
+      scroll-snap-align: start;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    /* Style de la navbar */
+    .navbar {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 0.1rem 0.5rem;
+    }
+    .navbar.fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #007BFF;
+      margin-right: 1rem;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .nav-link {
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #0056b3;
+    }
+    /* Titres des sections */
+    h2.section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #007BFF;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+    h2.section-title::after {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      background: #007BFF;
+      left: 0;
+      bottom: -5px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="ift4055.html">IFT4055</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#titre">Page Titre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#table-matieres">Table des matières</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#enonce">Énoncé du projet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#description">Description détaillée</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#plan">Plan de développement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rapports">Rapports d’avancement</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Section 1 : Page Titre -->
+  <section id="titre" class="d-flex">
+    <div class="container text-center">
+      <h1 class="display-3">Projet IFT4055</h1>
+      <p class="lead">Conception et Développement d'une application de gestion de projets</p>
+    </div>
+  </section>
+  
+  <!-- Section 2 : Table des matières -->
+  <section id="table-matieres" class="d-flex">
+    <div class="container">
+      <h2 class="section-title">Table des matières</h2>
+      <ul class="list-unstyled">
+        <li><strong>A.</strong> <a href="#enonce">Énoncé du projet</a></li>
+        <li><strong>B.</strong> <a href="#description">Description détaillée</a></li>
+        <li><strong>C.</strong> <a href="#plan">Plan de développement</a></li>
+        <li><strong>D.</strong> <a href="#rapports">Rapports d’avancement</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 3 : A. Énoncé du projet -->
+  <section id="enonce" class="d-flex">
+    <div class="container">
+      <h2 class="section-title">A. Énoncé du projet</h2>
+      <p>
+        L'objectif principal du projet IFT4055 est de développer une application innovante qui facilite la gestion et le suivi des projets en intégrant des fonctionnalités de collaboration, de planification et de reporting. Le projet vise à répondre aux besoins des utilisateurs en proposant une interface intuitive et des outils performants pour améliorer la productivité et la transparence dans la gestion des projets.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 4 : B. Description détaillée -->
+  <section id="description" class="d-flex">
+    <div class="container">
+      <h2 class="section-title">B. Description détaillée</h2>
+      <p>
+        <strong>Titre :</strong> Application de Gestion de Projets Collaboratifs.
+      </p>
+      <p>
+        <strong>Spécification fonctionnelle :</strong> L'application doit permettre la création, la modification et la suppression de projets, la gestion des tâches et des délais, l'attribution de rôles et la communication entre les membres de l'équipe. Elle intégrera également des fonctionnalités de suivi d'avancement et de génération de rapports.
+      </p>
+      <p>
+        <strong>Environnement et contraintes techniques :</strong> Le développement sera réalisé à l'aide de technologies web modernes (HTML5, CSS3, JavaScript, et un framework backend tel que Node.js ou Django). L'application devra être responsive et compatible avec les principaux navigateurs, tout en respectant des normes strictes en matière de sécurité, de performance et d'accessibilité.
+      </p>
+      <p>
+        <strong>Architecture logicielle :</strong> L'architecture proposée repose sur une approche modulaire et orientée microservices, favorisant la scalabilité et la maintenabilité. Chaque module se concentrera sur une fonctionnalité spécifique et communiquera via des API RESTful.
+      </p>
+      <p>
+        <strong>Modules principaux de travail :</strong>
+        <ul>
+          <li>Module de gestion des utilisateurs et authentification</li>
+          <li>Module de gestion des projets et des tâches</li>
+          <li>Module de communication interne et notifications</li>
+          <li>Module de reporting et analyse de données</li>
+        </ul>
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 5 : C. Plan de développement -->
+  <section id="plan" class="d-flex">
+    <div class="container">
+      <h2 class="section-title">C. Plan de développement</h2>
+      <p>
+        <strong>Date de début du projet :</strong> 1er mars 2025<br>
+        <strong>Date de fin du projet :</strong> 30 juin 2025
+      </p>
+      <p>
+        <strong>Dates prévues de complétion et vérification des modules :</strong>
+      </p>
+      <ul>
+        <li>Module de gestion des utilisateurs : 15 mars 2025</li>
+        <li>Module de gestion des projets et tâches : 15 avril 2025</li>
+        <li>Module de communication et notifications : 15 mai 2025</li>
+        <li>Module de reporting et analyse : 15 juin 2025</li>
+      </ul>
+      <p>
+        Chaque module fera l'objet d'une phase de tests et de vérification pour s'assurer du respect des spécifications fonctionnelles et techniques.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Section 6 : D. Rapports d’avancement -->
+  <section id="rapports" class="d-flex">
+    <div class="container">
+      <h2 class="section-title">D. Rapports d’avancement</h2>
+      <p>
+        <strong>Rapport d’avancement 1 (2 semaines) :</strong><br>
+        Au cours des deux premières semaines, nous avons réalisé l'analyse des besoins et établi les bases du cahier des charges. L'environnement de développement a été configuré et une première maquette de l'interface a été proposée. Quelques ajustements ont été identifiés afin de mieux répondre aux exigences fonctionnelles.
+      </p>
+      <p>
+        <strong>Rapport d’avancement 2 (4 semaines) :</strong><br>
+        Quatre semaines après le début du projet, le développement des modules de gestion des utilisateurs et de projets est en cours. Les premières fonctionnalités ont été implémentées et testées, montrant des résultats prometteurs. Des retours constructifs de la part du professeur responsable ont permis d'affiner certains aspects techniques et fonctionnels.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Pied de page -->
+  <footer class="footer text-center py-3">
+    <div class="container">
+      <p class="mb-0">© 2025 IFT4055. Tous droits réservés.</p>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap 5 JS Bundle avec Popper (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
